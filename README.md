@@ -14,7 +14,7 @@ docker-dashboard-arm
 ```bash
 $ git clone https://github.com/EasyPi/docker-dashboard-arm.git
 $ cd docker-dashboard-arm/fig/
-$ tree -F
+$ tree -F -P '*.yml'
 .
 ├── grafana/
 │   └── docker-compose.yml
