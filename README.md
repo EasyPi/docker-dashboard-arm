@@ -39,6 +39,14 @@ $ docker-compose up -d
 
 ![](screenshot.png)
 
+### Administration
+
+If you want to delete old data (>30d), please run this InfluxDB query:
+
+```
+ALTER RETENTION POLICY default ON telegraf DURATION 30d DEFAULT
+```
+
 [1]: https://hub.docker.com/r/easypi/telegraf-arm/
 [2]: https://hub.docker.com/r/easypi/influxdb-arm/
 [3]: https://hub.docker.com/r/easypi/grafana-arm/
