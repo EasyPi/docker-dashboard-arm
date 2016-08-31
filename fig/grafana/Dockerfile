@@ -5,7 +5,7 @@
 FROM armhf/debian:jessie
 MAINTAINER EasyPi Software Foundation
 
-ENV GRAFANA_VERSION=3.1.1-1470786449
+ENV GRAFANA_VERSION=3.1.1-1472506485
 ENV GRAFANA_FILE=grafana_${GRAFANA_VERSION}_armhf.deb
 ENV GRAFANA_URL=https://github.com/vimagick/rpi-bin/raw/master/deb/${GRAFANA_FILE}
 
