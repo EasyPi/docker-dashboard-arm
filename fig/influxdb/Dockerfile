@@ -5,7 +5,7 @@
 FROM armhf/debian:jessie
 MAINTAINER EasyPi Software Foundation
 
-ENV INFLUXDB_VERSION=1.0.2
+ENV INFLUXDB_VERSION=1.1.0
 ENV INFLUXDB_FILE=influxdb_${INFLUXDB_VERSION}_armhf.deb
 ENV INFLUXDB_URL=https://dl.influxdata.com/influxdb/releases/${INFLUXDB_FILE}
 ENV COLLECTD_URL=https://github.com/collectd/collectd/raw/master/src/types.db
