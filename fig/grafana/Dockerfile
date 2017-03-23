@@ -5,8 +5,8 @@
 FROM armhf/debian:jessie
 MAINTAINER EasyPi Software Foundation
 
-ENV GRAFANA_VERSION=4.1.2
-ENV GRAFANA_FILE=grafana_${GRAFANA_VERSION}-1487023783_armhf.deb
+ENV GRAFANA_VERSION=4.2.0
+ENV GRAFANA_FILE=grafana_${GRAFANA_VERSION}_armhf.deb
 ENV GRAFANA_URL=https://github.com/fg2it/grafana-on-raspberry/releases/download/v${GRAFANA_VERSION}/${GRAFANA_FILE}
 
 RUN set -xe \
