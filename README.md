@@ -1,6 +1,8 @@
 docker-dashboard-arm
 ====================
 
+[![Build Status](https://travis-ci.org/EasyPi/docker-dashboard-arm.svg?branch=master)](https://travis-ci.org/EasyPi/docker-dashboard-arm)
+
 :bar_chart: Dashboard with Docker Containers on RaspberryPi
 
 ### How It Works

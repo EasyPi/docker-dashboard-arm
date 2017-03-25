@@ -2,7 +2,7 @@
 # Dockerfile for telegraf-arm
 #
 
-FROM easypi/alpine-arm
+FROM easypi/alpine-arm:build
 MAINTAINER EasyPi Software Foundation
 
 ENV TELEGRAF_VERSION 1.2.1
