@@ -10,8 +10,8 @@ services:
 env:
   global:
     - GRAFANA_VERSION=4.2.0
-    - INFLUXDB_VERSION=1.2.2
-    - TELEGRAF_VERSION=1.2.1
+    - INFLUXDB_VERSION=1.2.4
+    - TELEGRAF_VERSION=1.3.0
 
 before_install:
   - docker run --rm --privileged multiarch/qemu-user-static:register --reset
