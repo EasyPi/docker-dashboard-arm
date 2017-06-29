@@ -55,4 +55,4 @@ ALTER RETENTION POLICY default ON telegraf DURATION 30d DEFAULT
 [1]: https://hub.docker.com/r/easypi/telegraf-arm/
 [2]: https://hub.docker.com/r/easypi/influxdb-arm/
 [3]: https://hub.docker.com/r/easypi/grafana-arm/
-[3]: https://hub.docker.com/r/easypi/statsd-arm/
+[4]: https://hub.docker.com/r/easypi/statsd-arm/
