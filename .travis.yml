@@ -13,6 +13,7 @@ env:
     - INFLUXDB_VERSION=1.2.4
     - TELEGRAF_VERSION=1.3.1
     - GRAPHITE_VERSION=1.0.1
+    - STATSD_VERSION=0.8.0
 
 before_install:
   - docker run --rm --privileged multiarch/qemu-user-static:register --reset
@@ -22,6 +23,7 @@ script:
   - docker build -t easypi/influxdb-arm:$INFLUXDB_VERSION fig/influxdb
   - docker build -t easypi/telegraf-arm:$TELEGRAF_VERSION fig/telegraf
   - docker build -t easypi/graphite-arm:$GRAPHITE_VERSION fig/graphite
+  - docker build -t easypi/statsd-arm:$STATSD_VERSION fig/statsd
 
 after_success:
   - docker login -u="$DOCKER_USERNAME" -p="$DOCKER_PASSWORD"
@@ -29,11 +31,14 @@ after_success:
   - docker tag easypi/influxdb-arm:$INFLUXDB_VERSION easypi/influxdb-arm:latest
   - docker tag easypi/telegraf-arm:$TELEGRAF_VERSION easypi/telegraf-arm:latest
   - docker tag easypi/graphite-arm:$GRAPHITE_VERSION easypi/graphite-arm:latest
+  - docker tag easypi/statsd-arm:$STATSD_VERSION easypi/statsd-arm:latest
   - docker push easypi/grafana-arm:$GRAFANA_VERSION
   - docker push easypi/influxdb-arm:$INFLUXDB_VERSION
   - docker push easypi/telegraf-arm:$TELEGRAF_VERSION
   - docker push easypi/graphite-arm:$GRAPHITE_VERSION
+  - docker push easypi/statsd-arm:$STATSD_VERSION
   - docker push easypi/grafana-arm:latest
   - docker push easypi/influxdb-arm:latest
   - docker push easypi/telegraf-arm:latest
   - docker push easypi/graphite-arm:latest
+  - docker push easypi/statsd-arm:latest
