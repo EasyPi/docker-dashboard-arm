@@ -22,7 +22,8 @@ RUN set -xe \
                python \
                python-dev \
     && curl -sSL https://bootstrap.pypa.io/get-pip.py | python \
-    && pip install gunicorn \
+    && pip install six \
+                   gunicorn \
                    supervisor \
                    https://github.com/graphite-project/whisper/tarball/master \
                    https://github.com/graphite-project/carbon/tarball/master \

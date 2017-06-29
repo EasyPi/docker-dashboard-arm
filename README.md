@@ -10,6 +10,7 @@ docker-dashboard-arm
 - [easypi/telegraf-arm][1] - Collect data
 - [easypi/influxdb-arm][2] - Store data
 - [easypi/grafana-arm][3] - Show data
+- [easypi/statsd-arm][4] - Aggregate data
 
 ### Quickstart
 
@@ -21,6 +22,8 @@ $ tree -F -P '*.yml'
 ├── grafana/
 │   └── docker-compose.yml
 ├── influxdb/
+│   └── docker-compose.yml
+├── statsd/
 │   └── docker-compose.yml
 └── telegraf/
     └── docker-compose.yml
@@ -52,3 +55,4 @@ ALTER RETENTION POLICY default ON telegraf DURATION 30d DEFAULT
 [1]: https://hub.docker.com/r/easypi/telegraf-arm/
 [2]: https://hub.docker.com/r/easypi/influxdb-arm/
 [3]: https://hub.docker.com/r/easypi/grafana-arm/
+[3]: https://hub.docker.com/r/easypi/statsd-arm/
