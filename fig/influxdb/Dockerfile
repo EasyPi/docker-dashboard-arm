@@ -2,7 +2,7 @@
 # Dockerfile for influxdb-arm
 #
 
-FROM resin/rpi-raspbian:jessie
+FROM resin/rpi-raspbian:stretch
 MAINTAINER EasyPi Software Foundation
 
 ENV INFLUXDB_VERSION=1.3.5

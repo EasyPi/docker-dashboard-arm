@@ -2,7 +2,7 @@
 # Dockerfile for grafana-arm
 #
 
-FROM resin/rpi-raspbian:jessie
+FROM resin/rpi-raspbian:stretch
 MAINTAINER EasyPi Software Foundation
 
 ENV GRAFANA_VERSION=4.4.3
