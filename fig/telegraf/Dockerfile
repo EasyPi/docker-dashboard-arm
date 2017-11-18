@@ -5,7 +5,7 @@
 FROM easypi/alpine-arm:build
 MAINTAINER EasyPi Software Foundation
 
-ENV TELEGRAF_VERSION 1.4.3
+ENV TELEGRAF_VERSION 1.4.4
 ENV TELEGRAF_FILE telegraf-${TELEGRAF_VERSION}_linux_armhf.tar.gz
 ENV TELEGRAF_URL https://dl.influxdata.com/telegraf/releases/${TELEGRAF_FILE}
 
