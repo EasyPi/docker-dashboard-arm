@@ -5,7 +5,7 @@ grafana:
   volumes:
     - ./data:/var/lib/grafana
   environment:
-    - GF_SERVER_ROOT_URL=http://grafana.easypi.info/
+    - GF_SERVER_ROOT_URL=http://grafana.easypi.pro/
     - GF_SECURITY_ADMIN_USER=admin
     - GF_SECURITY_ADMIN_PASSWORD=admin
   restart: always
