@@ -9,7 +9,7 @@ services:
 
 env:
   global:
-    - GRAFANA_VERSION=5.1.4
+    - GRAFANA_VERSION=5.2.2
     - INFLUXDB_VERSION=1.6.0
     - TELEGRAF_VERSION=1.7.1
     - GRAPHITE_VERSION=1.1.3
