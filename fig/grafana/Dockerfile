@@ -5,7 +5,7 @@
 FROM resin/rpi-raspbian:stretch
 MAINTAINER EasyPi Software Foundation
 
-ENV GRAFANA_VERSION=5.2.2
+ENV GRAFANA_VERSION=5.2.4
 ENV GRAFANA_FILE=grafana_${GRAFANA_VERSION}_armhf.deb
 ENV GRAFANA_URL=https://s3-us-west-2.amazonaws.com/grafana-releases/release/${GRAFANA_FILE}
 
