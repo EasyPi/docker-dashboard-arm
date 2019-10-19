@@ -2,10 +2,10 @@
 # Dockerfile for influxdb-arm
 #
 
-FROM resin/rpi-raspbian:stretch
+FROM balenalib/rpi-raspbian:stretch
 MAINTAINER EasyPi Software Foundation
 
-ENV INFLUXDB_VERSION=1.6.1
+ENV INFLUXDB_VERSION=1.7.8
 ENV INFLUXDB_FILE=influxdb_${INFLUXDB_VERSION}_armhf.deb
 ENV INFLUXDB_URL=https://dl.influxdata.com/influxdb/releases/${INFLUXDB_FILE}
 ENV COLLECTD_URL=https://github.com/collectd/collectd/raw/master/src/types.db

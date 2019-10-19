@@ -5,7 +5,7 @@
 FROM easypi/alpine-arm:build
 MAINTAINER EasyPi Software Foundation
 
-ENV STATSD_VERSION 0.8.0
+ENV STATSD_VERSION 0.8.5
 ENV STATSD_URL https://github.com/etsy/statsd/archive/v$STATSD_VERSION.tar.gz
 
 WORKDIR /app
