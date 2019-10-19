@@ -12,7 +12,7 @@ env:
     - GRAFANA_VERSION=6.4.3
     - GRAPHITE_VERSION=1.1.5
     - INFLUXDB_VERSION=1.7.8
-    - STATSD_VERSION=0.8.5
+    # STATSD_VERSION=0.8.5
     - TELEGRAF_VERSION=1.12.3
 
 before_install:
@@ -22,7 +22,7 @@ script:
   - docker build -t easypi/grafana-arm:$GRAFANA_VERSION fig/grafana
   - docker build -t easypi/graphite-arm:$GRAPHITE_VERSION fig/graphite
   - docker build -t easypi/influxdb-arm:$INFLUXDB_VERSION fig/influxdb
-  - docker build -t easypi/statsd-arm:$STATSD_VERSION fig/statsd
+  # docker build -t easypi/statsd-arm:$STATSD_VERSION fig/statsd
   - docker build -t easypi/telegraf-arm:$TELEGRAF_VERSION fig/telegraf
 
 after_success:
@@ -30,15 +30,15 @@ after_success:
   - docker tag easypi/grafana-arm:$GRAFANA_VERSION easypi/grafana-arm:latest
   - docker tag easypi/graphite-arm:$GRAPHITE_VERSION easypi/graphite-arm:latest
   - docker tag easypi/influxdb-arm:$INFLUXDB_VERSION easypi/influxdb-arm:latest
-  - docker tag easypi/statsd-arm:$STATSD_VERSION easypi/statsd-arm:latest
+  # docker tag easypi/statsd-arm:$STATSD_VERSION easypi/statsd-arm:latest
   - docker tag easypi/telegraf-arm:$TELEGRAF_VERSION easypi/telegraf-arm:latest
   - docker push easypi/grafana-arm:$GRAFANA_VERSION
   - docker push easypi/graphite-arm:$GRAPHITE_VERSION
   - docker push easypi/influxdb-arm:$INFLUXDB_VERSION
-  - docker push easypi/statsd-arm:$STATSD_VERSION
+  # docker push easypi/statsd-arm:$STATSD_VERSION
   - docker push easypi/telegraf-arm:$TELEGRAF_VERSION
   - docker push easypi/grafana-arm:latest
   - docker push easypi/graphite-arm:latest
   - docker push easypi/influxdb-arm:latest
-  - docker push easypi/statsd-arm:latest
+  # docker push easypi/statsd-arm:latest
   - docker push easypi/telegraf-arm:latest
